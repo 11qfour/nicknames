@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\bin\Debug\nickname csharp mech.exe.config
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\bin\Debug\nickname csharp mech.exe
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\bin\Debug\nickname csharp mech.pdb
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname csharp mech.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.basepage.resources
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.Properties.Resources.resources
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname csharp mech.csproj.GenerateResource.cache
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname csharp mech.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname csharp mech.exe
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname csharp mech.pdb
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.ExistNN.resources
