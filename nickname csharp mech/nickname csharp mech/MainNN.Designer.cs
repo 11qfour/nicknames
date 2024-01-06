@@ -49,46 +49,50 @@ namespace nickname_csharp_mech
             // 
             // ExistNNButton
             // 
+            this.ExistNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ExistNNButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExistNNButton.Location = new System.Drawing.Point(55, 55);
             this.ExistNNButton.Name = "ExistNNButton";
             this.ExistNNButton.Size = new System.Drawing.Size(233, 50);
             this.ExistNNButton.TabIndex = 1;
             this.ExistNNButton.Text = "Изменить имеющийся никнейм";
-            this.ExistNNButton.UseVisualStyleBackColor = true;
+            this.ExistNNButton.UseVisualStyleBackColor = false;
             this.ExistNNButton.Click += new System.EventHandler(this.ExistNNButton_Click);
             // 
             // NewNNButton
             // 
+            this.NewNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.NewNNButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewNNButton.Location = new System.Drawing.Point(55, 132);
             this.NewNNButton.Name = "NewNNButton";
             this.NewNNButton.Size = new System.Drawing.Size(233, 46);
             this.NewNNButton.TabIndex = 2;
             this.NewNNButton.Text = "Новый Никнейм";
-            this.NewNNButton.UseVisualStyleBackColor = true;
+            this.NewNNButton.UseVisualStyleBackColor = false;
             this.NewNNButton.Click += new System.EventHandler(this.NewNNButton_Click);
             // 
             // LikedNNButton
             // 
+            this.LikedNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.LikedNNButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LikedNNButton.Location = new System.Drawing.Point(55, 204);
             this.LikedNNButton.Name = "LikedNNButton";
             this.LikedNNButton.Size = new System.Drawing.Size(233, 46);
             this.LikedNNButton.TabIndex = 3;
             this.LikedNNButton.Text = "Понравившиеся Никенеймы";
-            this.LikedNNButton.UseVisualStyleBackColor = true;
+            this.LikedNNButton.UseVisualStyleBackColor = false;
             this.LikedNNButton.Click += new System.EventHandler(this.LikedNNButton_Click);
             // 
             // InfoButton
             // 
+            this.InfoButton.BackColor = System.Drawing.Color.Teal;
             this.InfoButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoButton.Location = new System.Drawing.Point(55, 281);
             this.InfoButton.Name = "InfoButton";
             this.InfoButton.Size = new System.Drawing.Size(233, 40);
             this.InfoButton.TabIndex = 4;
             this.InfoButton.Text = "Справка";
-            this.InfoButton.UseVisualStyleBackColor = true;
+            this.InfoButton.UseVisualStyleBackColor = false;
             this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
             // 
             // basepage
