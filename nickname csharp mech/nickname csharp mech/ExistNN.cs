@@ -16,5 +16,21 @@ namespace nickname_csharp_mech
         {
             InitializeComponent();
         }
+
+        private void ExistNN_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExistStartTB_Click(object sender, EventArgs e)
+        {
+            ExistStartTB.Text = "";
+            ExistStartTB.ForeColor = Color.Black;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

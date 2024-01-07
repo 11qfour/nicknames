@@ -50,10 +50,10 @@ namespace nickname_csharp_mech
             // ExistNNButton
             // 
             this.ExistNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ExistNNButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExistNNButton.Location = new System.Drawing.Point(55, 55);
+            this.ExistNNButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExistNNButton.Location = new System.Drawing.Point(22, 30);
             this.ExistNNButton.Name = "ExistNNButton";
-            this.ExistNNButton.Size = new System.Drawing.Size(233, 50);
+            this.ExistNNButton.Size = new System.Drawing.Size(310, 63);
             this.ExistNNButton.TabIndex = 1;
             this.ExistNNButton.Text = "Изменить имеющийся никнейм";
             this.ExistNNButton.UseVisualStyleBackColor = false;
@@ -62,10 +62,10 @@ namespace nickname_csharp_mech
             // NewNNButton
             // 
             this.NewNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.NewNNButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewNNButton.Location = new System.Drawing.Point(55, 132);
+            this.NewNNButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewNNButton.Location = new System.Drawing.Point(22, 125);
             this.NewNNButton.Name = "NewNNButton";
-            this.NewNNButton.Size = new System.Drawing.Size(233, 46);
+            this.NewNNButton.Size = new System.Drawing.Size(310, 46);
             this.NewNNButton.TabIndex = 2;
             this.NewNNButton.Text = "Новый Никнейм";
             this.NewNNButton.UseVisualStyleBackColor = false;
@@ -74,10 +74,10 @@ namespace nickname_csharp_mech
             // LikedNNButton
             // 
             this.LikedNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.LikedNNButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LikedNNButton.Location = new System.Drawing.Point(55, 204);
+            this.LikedNNButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LikedNNButton.Location = new System.Drawing.Point(22, 207);
             this.LikedNNButton.Name = "LikedNNButton";
-            this.LikedNNButton.Size = new System.Drawing.Size(233, 46);
+            this.LikedNNButton.Size = new System.Drawing.Size(310, 46);
             this.LikedNNButton.TabIndex = 3;
             this.LikedNNButton.Text = "Понравившиеся Никенеймы";
             this.LikedNNButton.UseVisualStyleBackColor = false;
@@ -86,8 +86,8 @@ namespace nickname_csharp_mech
             // InfoButton
             // 
             this.InfoButton.BackColor = System.Drawing.Color.Teal;
-            this.InfoButton.Font = new System.Drawing.Font("Mocking Bird", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoButton.Location = new System.Drawing.Point(55, 281);
+            this.InfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoButton.Location = new System.Drawing.Point(60, 282);
             this.InfoButton.Name = "InfoButton";
             this.InfoButton.Size = new System.Drawing.Size(233, 40);
             this.InfoButton.TabIndex = 4;
@@ -108,7 +108,7 @@ namespace nickname_csharp_mech
             this.Controls.Add(this.basepageLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "basepage";
-            this.Text = "Найди свой Никнейм";
+            this.Text = "Никнейм для социальных сетей";
             this.Load += new System.EventHandler(this.basepage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
