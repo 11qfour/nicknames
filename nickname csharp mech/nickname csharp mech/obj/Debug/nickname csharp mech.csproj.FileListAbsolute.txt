@@ -11,3 +11,4 @@ C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\ob
 C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.ExistNN.resources
 C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.LikedNN.resources
 C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.NewNN.resources
+C:\Users\user\Desktop\proj\nickname\nickname csharp mech\nickname csharp mech\obj\Debug\nickname_csharp_mech.InfoNN.resources

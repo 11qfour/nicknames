@@ -50,9 +50,10 @@ namespace nickname_csharp_mech
             // 
             // ExistNNButton
             // 
+            this.ExistNNButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExistNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ExistNNButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExistNNButton.Location = new System.Drawing.Point(22, 30);
+            this.ExistNNButton.Location = new System.Drawing.Point(22, 31);
             this.ExistNNButton.Name = "ExistNNButton";
             this.ExistNNButton.Size = new System.Drawing.Size(310, 63);
             this.ExistNNButton.TabIndex = 1;
@@ -62,6 +63,7 @@ namespace nickname_csharp_mech
             // 
             // NewNNButton
             // 
+            this.NewNNButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NewNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.NewNNButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewNNButton.Location = new System.Drawing.Point(22, 125);
@@ -74,6 +76,7 @@ namespace nickname_csharp_mech
             // 
             // LikedNNButton
             // 
+            this.LikedNNButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LikedNNButton.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.LikedNNButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LikedNNButton.Location = new System.Drawing.Point(22, 207);
@@ -86,6 +89,7 @@ namespace nickname_csharp_mech
             // 
             // InfoButton
             // 
+            this.InfoButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.InfoButton.BackColor = System.Drawing.Color.Teal;
             this.InfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoButton.Location = new System.Drawing.Point(22, 286);
@@ -98,6 +102,7 @@ namespace nickname_csharp_mech
             // 
             // ExitMainButton
             // 
+            this.ExitMainButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExitMainButton.BackColor = System.Drawing.Color.Teal;
             this.ExitMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitMainButton.Location = new System.Drawing.Point(192, 286);
@@ -124,6 +129,8 @@ namespace nickname_csharp_mech
             this.Name = "basepage";
             this.Text = "Никнейм для социальных сетей";
             this.Load += new System.EventHandler(this.basepage_Load);
+            this.SizeChanged += new System.EventHandler(this.basepage_SizeChanged);
+            this.Resize += new System.EventHandler(this.basepage_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 

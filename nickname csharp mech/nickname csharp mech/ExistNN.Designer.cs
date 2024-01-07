@@ -30,15 +30,16 @@ namespace nickname_csharp_mech
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExistNN));
             this.ExistLabel1 = new System.Windows.Forms.Label();
             this.ExistStartTB = new System.Windows.Forms.TextBox();
             this.ExistResultTB = new System.Windows.Forms.TextBox();
             this.ExistButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BackExistButton = new System.Windows.Forms.Button();
             this.ExistRadioButton = new System.Windows.Forms.RadioButton();
             this.CopyExistButton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.InfoExistButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@ namespace nickname_csharp_mech
             this.ExistResultTB.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ExistResultTB.Enabled = false;
             this.ExistResultTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExistResultTB.Location = new System.Drawing.Point(17, 211);
+            this.ExistResultTB.Location = new System.Drawing.Point(12, 233);
             this.ExistResultTB.Name = "ExistResultTB";
             this.ExistResultTB.Size = new System.Drawing.Size(272, 30);
             this.ExistResultTB.TabIndex = 2;
@@ -80,7 +81,7 @@ namespace nickname_csharp_mech
             // 
             this.ExistButton.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ExistButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExistButton.Location = new System.Drawing.Point(107, 123);
+            this.ExistButton.Location = new System.Drawing.Point(97, 145);
             this.ExistButton.Name = "ExistButton";
             this.ExistButton.Size = new System.Drawing.Size(171, 44);
             this.ExistButton.TabIndex = 3;
@@ -88,22 +89,22 @@ namespace nickname_csharp_mech
             this.ExistButton.UseVisualStyleBackColor = false;
             this.ExistButton.Click += new System.EventHandler(this.ExistButton_Click);
             // 
-            // button1
+            // BackExistButton
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(141, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BackExistButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackExistButton.Image = ((System.Drawing.Image)(resources.GetObject("BackExistButton.Image")));
+            this.BackExistButton.Location = new System.Drawing.Point(152, 287);
+            this.BackExistButton.Name = "BackExistButton";
+            this.BackExistButton.Size = new System.Drawing.Size(50, 50);
+            this.BackExistButton.TabIndex = 4;
+            this.BackExistButton.UseVisualStyleBackColor = false;
+            this.BackExistButton.Click += new System.EventHandler(this.BackExistButton_Click);
             // 
             // ExistRadioButton
             // 
             this.ExistRadioButton.AutoSize = true;
             this.ExistRadioButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.ExistRadioButton.Location = new System.Drawing.Point(141, 85);
+            this.ExistRadioButton.Location = new System.Drawing.Point(131, 95);
             this.ExistRadioButton.Name = "ExistRadioButton";
             this.ExistRadioButton.Size = new System.Drawing.Size(111, 17);
             this.ExistRadioButton.TabIndex = 5;
@@ -113,7 +114,8 @@ namespace nickname_csharp_mech
             // 
             // CopyExistButton
             // 
-            this.CopyExistButton.Location = new System.Drawing.Point(307, 210);
+            this.CopyExistButton.Image = ((System.Drawing.Image)(resources.GetObject("CopyExistButton.Image")));
+            this.CopyExistButton.Location = new System.Drawing.Point(307, 232);
             this.CopyExistButton.Name = "CopyExistButton";
             this.CopyExistButton.Size = new System.Drawing.Size(36, 31);
             this.CopyExistButton.TabIndex = 6;
@@ -124,13 +126,15 @@ namespace nickname_csharp_mech
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // button2
+            // InfoExistButton
             // 
-            this.button2.Location = new System.Drawing.Point(307, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 31);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = true;
+            this.InfoExistButton.Image = ((System.Drawing.Image)(resources.GetObject("InfoExistButton.Image")));
+            this.InfoExistButton.Location = new System.Drawing.Point(307, 26);
+            this.InfoExistButton.Name = "InfoExistButton";
+            this.InfoExistButton.Size = new System.Drawing.Size(36, 31);
+            this.InfoExistButton.TabIndex = 7;
+            this.InfoExistButton.UseVisualStyleBackColor = true;
+            this.InfoExistButton.Click += new System.EventHandler(this.InfoExistButton_Click);
             // 
             // ExistNN
             // 
@@ -138,10 +142,10 @@ namespace nickname_csharp_mech
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(355, 360);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.InfoExistButton);
             this.Controls.Add(this.CopyExistButton);
             this.Controls.Add(this.ExistRadioButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BackExistButton);
             this.Controls.Add(this.ExistButton);
             this.Controls.Add(this.ExistResultTB);
             this.Controls.Add(this.ExistStartTB);
@@ -161,10 +165,10 @@ namespace nickname_csharp_mech
         private System.Windows.Forms.TextBox ExistStartTB;
         private System.Windows.Forms.TextBox ExistResultTB;
         private System.Windows.Forms.Button ExistButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BackExistButton;
         private System.Windows.Forms.RadioButton ExistRadioButton;
         private System.Windows.Forms.Button CopyExistButton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button InfoExistButton;
     }
 }

@@ -33,11 +33,6 @@ namespace nickname_csharp_mech
             ExistStartTB.ForeColor = Color.Black;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void check_string(string s) //проверка на правильно введённый ник
         {
             if (s.Length >= 31 || s.Length <= 0)//проверка на длину слова
@@ -97,9 +92,15 @@ namespace nickname_csharp_mech
             Clipboard.SetText(ExistResultTB.Text);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void InfoExistButton_Click(object sender, EventArgs e)
         {
+            InfoNN infonn = new InfoNN();
+            infonn.Show();
+        }
 
+        private void BackExistButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

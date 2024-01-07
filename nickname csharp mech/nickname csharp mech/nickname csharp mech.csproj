@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InfoNN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoNN.Designer.cs">
+      <DependentUpon>InfoNN.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewNN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ExistNN.resx">
       <DependentUpon>ExistNN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoNN.resx">
+      <DependentUpon>InfoNN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LikedNN.resx">
       <DependentUpon>LikedNN.cs</DependentUpon>
