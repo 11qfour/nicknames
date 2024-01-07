@@ -96,5 +96,10 @@ namespace nickname_csharp_mech
         {
             Clipboard.SetText(ExistResultTB.Text);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

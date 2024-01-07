@@ -30,7 +30,6 @@ namespace nickname_csharp_mech
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExistNN));
             this.ExistLabel1 = new System.Windows.Forms.Label();
             this.ExistStartTB = new System.Windows.Forms.TextBox();
             this.ExistResultTB = new System.Windows.Forms.TextBox();
@@ -39,6 +38,7 @@ namespace nickname_csharp_mech
             this.ExistRadioButton = new System.Windows.Forms.RadioButton();
             this.CopyExistButton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +113,6 @@ namespace nickname_csharp_mech
             // 
             // CopyExistButton
             // 
-            this.CopyExistButton.Image = ((System.Drawing.Image)(resources.GetObject("CopyExistButton.Image")));
             this.CopyExistButton.Location = new System.Drawing.Point(307, 210);
             this.CopyExistButton.Name = "CopyExistButton";
             this.CopyExistButton.Size = new System.Drawing.Size(36, 31);
@@ -125,12 +124,21 @@ namespace nickname_csharp_mech
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(307, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 31);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // ExistNN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(355, 360);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.CopyExistButton);
             this.Controls.Add(this.ExistRadioButton);
             this.Controls.Add(this.button1);
@@ -157,5 +165,6 @@ namespace nickname_csharp_mech
         private System.Windows.Forms.RadioButton ExistRadioButton;
         private System.Windows.Forms.Button CopyExistButton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button button2;
     }
 }
