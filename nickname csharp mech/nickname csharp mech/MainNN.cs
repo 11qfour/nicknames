@@ -77,5 +77,10 @@ namespace nickname_csharp_mech
                 MaximumSize = SIze;
             }
         }
+
+        private void MenuMainButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

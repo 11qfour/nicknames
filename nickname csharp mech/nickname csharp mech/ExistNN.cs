@@ -12,6 +12,7 @@ namespace nickname_csharp_mech
 {
     public partial class ExistNN : Form
     {
+        string result;
         bool click_TB_start = false; // флаг первого клика по форме
         public ExistNN()
         {
@@ -43,7 +44,7 @@ namespace nickname_csharp_mech
             {
                 for (int i = 0; i < s.Length; i++)
                 {
-                    if ((s[i] == '_') || (s[i] == '.') || char.IsDigit(s[i]) || (char.IsLetter(s[i]) && s[i] <= 'z' && s[i] >= 'A'))
+                    if ((s[i] == '_') || (s[i] == '.') || char.IsDigit(s[i]) || (char.IsLetter(s[i]) && s[i] <= 'z' && s[i] >= 'A')||(s[i]==' '))
                     {
 
                         if (s[i] == '.')
@@ -54,11 +55,18 @@ namespace nickname_csharp_mech
                             }
                             else
                             {
+                                result += s[i];
                                 continue;
                             }
                         }
+                        else if (s[i] == ' ')//добавление черты вместо пробела
+                        {
+                            result += '_';
+                            continue;
+                        }
                         else
                         {
+                            result += s[i];
                             continue;
                         }
                     }
@@ -73,17 +81,18 @@ namespace nickname_csharp_mech
 
         private void ExistButton_Click(object sender, EventArgs e)
         {
+            result = "";
             string s = ExistStartTB.Text;
             errorProvider1.Clear();
             check_string(s);
 
             //проверка на кнопку без ограничений
             if (ExistRadioButton.Checked){
-
+                ExistResultTB.Text = result;
             }
-            else
+            else//если не включена проверка на нецензурность
             {
-                
+                ExistResultTB.Text = result;
             }
         }
 
