@@ -44,5 +44,10 @@ namespace nickname_csharp_mech
         {
             MessageBox.Show("GitHub: 11qfour", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void ExitMainButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

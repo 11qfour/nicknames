@@ -35,6 +35,7 @@ namespace nickname_csharp_mech
             this.NewNNButton = new System.Windows.Forms.Button();
             this.LikedNNButton = new System.Windows.Forms.Button();
             this.InfoButton = new System.Windows.Forms.Button();
+            this.ExitMainButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // basepageLabel1
@@ -87,13 +88,25 @@ namespace nickname_csharp_mech
             // 
             this.InfoButton.BackColor = System.Drawing.Color.Teal;
             this.InfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoButton.Location = new System.Drawing.Point(60, 282);
+            this.InfoButton.Location = new System.Drawing.Point(22, 286);
             this.InfoButton.Name = "InfoButton";
-            this.InfoButton.Size = new System.Drawing.Size(233, 40);
+            this.InfoButton.Size = new System.Drawing.Size(140, 40);
             this.InfoButton.TabIndex = 4;
             this.InfoButton.Text = "Справка";
             this.InfoButton.UseVisualStyleBackColor = false;
             this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
+            // 
+            // ExitMainButton
+            // 
+            this.ExitMainButton.BackColor = System.Drawing.Color.Teal;
+            this.ExitMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitMainButton.Location = new System.Drawing.Point(192, 286);
+            this.ExitMainButton.Name = "ExitMainButton";
+            this.ExitMainButton.Size = new System.Drawing.Size(140, 40);
+            this.ExitMainButton.TabIndex = 5;
+            this.ExitMainButton.Text = "Выйти";
+            this.ExitMainButton.UseVisualStyleBackColor = false;
+            this.ExitMainButton.Click += new System.EventHandler(this.ExitMainButton_Click);
             // 
             // basepage
             // 
@@ -101,6 +114,7 @@ namespace nickname_csharp_mech
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(355, 360);
+            this.Controls.Add(this.ExitMainButton);
             this.Controls.Add(this.InfoButton);
             this.Controls.Add(this.LikedNNButton);
             this.Controls.Add(this.NewNNButton);
@@ -122,6 +136,7 @@ namespace nickname_csharp_mech
         private System.Windows.Forms.Button NewNNButton;
         private System.Windows.Forms.Button LikedNNButton;
         private System.Windows.Forms.Button InfoButton;
+        private System.Windows.Forms.Button ExitMainButton;
     }
 }
 

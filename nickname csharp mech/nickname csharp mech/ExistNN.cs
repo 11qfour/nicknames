@@ -32,5 +32,21 @@ namespace nickname_csharp_mech
         {
             this.Close();
         }
+
+        private void ExistButton_Click(object sender, EventArgs e)
+        {
+            if (ExistRadioButton.Checked){
+
+            }
+            else
+            {
+                
+            }
+        }
+
+        private void CopyExistButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(ExistResultTB.Text);
+        }
     }
 }
