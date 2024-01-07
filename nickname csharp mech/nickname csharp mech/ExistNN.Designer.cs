@@ -29,6 +29,7 @@ namespace nickname_csharp_mech
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExistNN));
             this.ExistLabel1 = new System.Windows.Forms.Label();
             this.ExistStartTB = new System.Windows.Forms.TextBox();
@@ -37,6 +38,8 @@ namespace nickname_csharp_mech
             this.button1 = new System.Windows.Forms.Button();
             this.ExistRadioButton = new System.Windows.Forms.RadioButton();
             this.CopyExistButton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ExistLabel1
@@ -56,7 +59,7 @@ namespace nickname_csharp_mech
             this.ExistStartTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.ExistStartTB.Location = new System.Drawing.Point(17, 26);
             this.ExistStartTB.Name = "ExistStartTB";
-            this.ExistStartTB.Size = new System.Drawing.Size(326, 30);
+            this.ExistStartTB.Size = new System.Drawing.Size(272, 30);
             this.ExistStartTB.TabIndex = 1;
             this.ExistStartTB.Text = "Ваш никнейм";
             this.ExistStartTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -118,6 +121,10 @@ namespace nickname_csharp_mech
             this.CopyExistButton.UseVisualStyleBackColor = true;
             this.CopyExistButton.Click += new System.EventHandler(this.CopyExistButton_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ExistNN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +141,7 @@ namespace nickname_csharp_mech
             this.Name = "ExistNN";
             this.Text = "Видоизменить существующий Никнейм";
             this.Load += new System.EventHandler(this.ExistNN_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,5 +156,6 @@ namespace nickname_csharp_mech
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton ExistRadioButton;
         private System.Windows.Forms.Button CopyExistButton;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
