@@ -46,11 +46,13 @@ namespace nickname_csharp_mech
 
         private void InfoButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("GitHub: 11qfour", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AboutProject infoproj = new AboutProject();
+            infoproj.Show();
         }
 
         private void ExitMainButton_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Вы уверены что хотите закрыть программу?","", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             this.Close();
         }
 
