@@ -55,6 +55,7 @@ namespace nickname_csharp_mech
             // 
             // ExistStartTB
             // 
+            this.ExistStartTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExistStartTB.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ExistStartTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExistStartTB.ForeColor = System.Drawing.SystemColors.InactiveCaption;
@@ -68,6 +69,7 @@ namespace nickname_csharp_mech
             // 
             // ExistResultTB
             // 
+            this.ExistResultTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExistResultTB.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ExistResultTB.Enabled = false;
             this.ExistResultTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -79,6 +81,7 @@ namespace nickname_csharp_mech
             // 
             // ExistButton
             // 
+            this.ExistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExistButton.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ExistButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExistButton.Location = new System.Drawing.Point(97, 145);
@@ -91,6 +94,7 @@ namespace nickname_csharp_mech
             // 
             // BackExistButton
             // 
+            this.BackExistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BackExistButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackExistButton.Image = ((System.Drawing.Image)(resources.GetObject("BackExistButton.Image")));
             this.BackExistButton.Location = new System.Drawing.Point(152, 287);
@@ -102,6 +106,7 @@ namespace nickname_csharp_mech
             // 
             // ExistRadioButton
             // 
+            this.ExistRadioButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExistRadioButton.AutoSize = true;
             this.ExistRadioButton.ForeColor = System.Drawing.SystemColors.Control;
             this.ExistRadioButton.Location = new System.Drawing.Point(131, 95);
@@ -114,6 +119,7 @@ namespace nickname_csharp_mech
             // 
             // CopyExistButton
             // 
+            this.CopyExistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CopyExistButton.Image = ((System.Drawing.Image)(resources.GetObject("CopyExistButton.Image")));
             this.CopyExistButton.Location = new System.Drawing.Point(307, 232);
             this.CopyExistButton.Name = "CopyExistButton";
@@ -128,6 +134,7 @@ namespace nickname_csharp_mech
             // 
             // InfoExistButton
             // 
+            this.InfoExistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.InfoExistButton.Image = ((System.Drawing.Image)(resources.GetObject("InfoExistButton.Image")));
             this.InfoExistButton.Location = new System.Drawing.Point(307, 26);
             this.InfoExistButton.Name = "InfoExistButton";
@@ -153,6 +160,8 @@ namespace nickname_csharp_mech
             this.Name = "ExistNN";
             this.Text = "Видоизменить существующий Никнейм";
             this.Load += new System.EventHandler(this.ExistNN_Load);
+            this.SizeChanged += new System.EventHandler(this.ExistNN_SizeChanged);
+            this.Resize += new System.EventHandler(this.ExistNN_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

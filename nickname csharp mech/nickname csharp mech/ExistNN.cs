@@ -14,9 +14,13 @@ namespace nickname_csharp_mech
     {
         string result;
         bool click_TB_start = false; // флаг первого клика по форме
+        Size SIze;
         public ExistNN()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Resize += ExistNN_Resize;
+            SizeChanged += ExistNN_SizeChanged;
         }
 
         private void ExistNN_Load(object sender, EventArgs e)
@@ -110,6 +114,32 @@ namespace nickname_csharp_mech
         private void BackExistButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ExistNN_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized || WindowState == FormWindowState.Normal)
+            {
+                // Оставляем форму в единственно возможном состоянии - свернутой или развернутой
+                MinimumSize = SIze;
+                MaximumSize = SIze;
+            }
+        }
+
+        private void ExistNN_SizeChanged(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                float scaleWidth = (float)Width / (float)ClientSize.Width; //коэфициент сохранения ширины
+                float scaleHeight = (float)Height / (float)ClientSize.Height;//коэфициент сохранения высоты
+                ExistStartTB.Size = new Size((int)(ExistStartTB.Width * scaleWidth), (int)(ExistStartTB.Height * scaleHeight));
+                InfoExistButton.Size = new Size((int)(InfoExistButton.Width * scaleWidth), (int)(InfoExistButton.Height * scaleHeight));
+                ExistRadioButton.Size = new Size((int)(ExistRadioButton.Width * scaleWidth), (int)(ExistRadioButton.Height * scaleHeight));
+                ExistButton.Size = new Size((int)(ExistButton.Width * scaleWidth), (int)(ExistButton.Height * scaleHeight));
+                ExistResultTB.Size = new Size((int)(ExistResultTB.Width * scaleWidth), (int)(ExistResultTB.Height * scaleHeight));
+                CopyExistButton.Size = new Size((int)(CopyExistButton.Width * scaleWidth), (int)(CopyExistButton.Height * scaleHeight));
+                BackExistButton.Size = new Size((int)(BackExistButton.Width * scaleWidth), (int)(BackExistButton.Height * scaleHeight));
+            }
         }
     }
 }
