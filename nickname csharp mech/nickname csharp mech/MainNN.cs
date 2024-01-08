@@ -21,6 +21,14 @@ namespace nickname_csharp_mech
             SizeChanged += basepage_SizeChanged;
         }
 
+        private void OpenNewFormInSameResolution(Form newForm)
+        {
+            newForm.Size = this.Size;
+            newForm.StartPosition = FormStartPosition.Manual;
+            newForm.Location = this.Location;
+            newForm.Show();
+        }
+
         private void basepage_Load(object sender, EventArgs e)
         {
 
@@ -29,31 +37,34 @@ namespace nickname_csharp_mech
         private void ExistNNButton_Click(object sender, EventArgs e)
         {
             ExistNN existnickname = new ExistNN();
-            existnickname.Show();
+            OpenNewFormInSameResolution(existnickname);
         }
 
         private void NewNNButton_Click(object sender, EventArgs e)
         {
             NewNN newnickname = new NewNN();
-            newnickname.Show();
+            OpenNewFormInSameResolution(newnickname);
         }
 
         private void LikedNNButton_Click(object sender, EventArgs e)
         {
             LikedNN likednickname = new LikedNN();
-            likednickname.Show();
+            OpenNewFormInSameResolution(likednickname);
         }
 
         private void InfoButton_Click(object sender, EventArgs e)
         {
             AboutProject infoproj = new AboutProject();
-            infoproj.Show();
+            OpenNewFormInSameResolution(infoproj);
         }
 
         private void ExitMainButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Вы уверены что хотите закрыть программу?","", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            this.Close();
+            DialogResult resultdialog = MessageBox.Show("Вы уверены что хотите закрыть программу?","", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultdialog==DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void basepage_SizeChanged(object sender, EventArgs e)

@@ -36,6 +36,8 @@ namespace nickname_csharp_mech
             // 
             // InfoRichTB
             // 
+            this.InfoRichTB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.InfoRichTB.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.InfoRichTB.Enabled = false;
             this.InfoRichTB.Location = new System.Drawing.Point(0, -2);
             this.InfoRichTB.Name = "InfoRichTB";
@@ -45,6 +47,7 @@ namespace nickname_csharp_mech
             // 
             // BackExistButton
             // 
+            this.BackExistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BackExistButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackExistButton.Image = ((System.Drawing.Image)(resources.GetObject("BackExistButton.Image")));
             this.BackExistButton.Location = new System.Drawing.Point(153, 298);
@@ -58,12 +61,15 @@ namespace nickname_csharp_mech
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(355, 360);
             this.Controls.Add(this.BackExistButton);
             this.Controls.Add(this.InfoRichTB);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "InfoNN";
             this.Text = "InfoNN";
             this.Load += new System.EventHandler(this.InfoNN_Load);
+            this.Resize += new System.EventHandler(this.InfoNN_Resize);
             this.ResumeLayout(false);
 
         }

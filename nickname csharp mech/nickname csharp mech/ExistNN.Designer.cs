@@ -94,6 +94,7 @@ namespace nickname_csharp_mech
             // 
             // BackExistButton
             // 
+            this.BackExistButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BackExistButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackExistButton.Image = ((System.Drawing.Image)(resources.GetObject("BackExistButton.Image")));
             this.BackExistButton.Location = new System.Drawing.Point(152, 287);

@@ -13,9 +13,11 @@ namespace nickname_csharp_mech
 {
     public partial class InfoNN : Form
     {
+        Size SIze;
         public InfoNN()
         {
             InitializeComponent();
+            Resize += InfoNN_Resize;
         }
 
         private void Rules_Text_Parse()
@@ -47,6 +49,16 @@ namespace nickname_csharp_mech
         private void BackExistButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void InfoNN_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized || WindowState == FormWindowState.Normal)
+            {
+                // Оставляем форму в единственно возможном состоянии - свернутой или развернутой
+                MinimumSize = SIze;
+                MaximumSize = SIze;
+            }
         }
     }
 }
