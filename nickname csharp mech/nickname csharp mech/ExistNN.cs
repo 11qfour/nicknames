@@ -130,7 +130,7 @@ namespace nickname_csharp_mech
         private char[] change_with_firstlast(char [] resultArray) //вставка в конец и начало рандомной буквы или цифры
         {
             Random Rand = new Random();
-            int res = Rand.Next(1, 36);
+            int res = Rand.Next(0, 35);
             char replacee = alphabet[res];
 
             // Создаем временный массив для сохранения исходных значений
