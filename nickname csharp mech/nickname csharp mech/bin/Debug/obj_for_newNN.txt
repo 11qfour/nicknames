@@ -1,4 +1,4 @@
-19
+20
 Betrayal
 Behaviour
 Consequences
@@ -18,3 +18,4 @@ Reconciliation
 Sadness
 Solitude
 Success
+Gold

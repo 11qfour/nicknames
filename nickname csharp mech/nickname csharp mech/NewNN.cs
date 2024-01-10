@@ -54,14 +54,14 @@ namespace nickname_csharp_mech
         {
             try
             {
-                using (StreamReader input = new StreamReader("adJ_for_newNN.txt"))
+                using (StreamReader input = new StreamReader("adJ_for_newNN.txt")) /*("test_adj.txt"))*/
                 {
-                    using (StreamReader input_obj = new StreamReader("obj_for_newNN.txt"))
+                    using (StreamReader input_obj = new StreamReader("obj_for_newNN.txt")) /*("test_obj.txt"))*/
                     {
                         COUNTT_ADJ = int.Parse(input.ReadLine());//количество прилагательных в первой строке
                         COUNT_OBJ = int.Parse(input_obj.ReadLine());//количество существительных в первой строке
-                        ADJS = new string[COUNTT_ADJ];
-                        OBJS = new string[COUNT_OBJ];
+                        ADJS=new string [COUNTT_ADJ];
+                        OBJS=new string[COUNT_OBJ];
                         int min_count = min(COUNTT_ADJ, COUNT_OBJ);
                         int max_count = max(COUNTT_ADJ, COUNT_OBJ);
                         for (int i = 0; i < COUNTT_ADJ; i++)
@@ -73,7 +73,7 @@ namespace nickname_csharp_mech
                         {
                             if (min_count == COUNTT_ADJ)
                             {
-                                for (int j = min_count; j < (max_count - min_count); j++)
+                                for (int j = min_count; j <= (max_count - min_count); j++)
                                 {
                                     OBJS[j] = input_obj.ReadLine();
                                 }
@@ -117,10 +117,17 @@ namespace nickname_csharp_mech
 
         private string to_lower(ref string temp)
         {
-            for (int i=0;i<temp.Length;i++)
+            char[] charArray = temp.ToCharArray();
+
+            for (int i = 0; i < charArray.Length; i++)
             {
-                char.ToLower(temp[i]);
+                if (char.IsLetter(charArray[i]) && char.IsUpper(charArray[i]))
+                {
+                    charArray[i] = char.ToLower(charArray[i]);
+                }
             }
+
+            temp = new string(charArray);
             return temp;
         }
 
@@ -134,7 +141,7 @@ namespace nickname_csharp_mech
             string obj = OBJS[num_of_obj];
             adj = to_lower(ref adj);
             obj = to_lower(ref obj);
-            s = adj + "_" +obj;
+            s = adj + "_" + obj;
             return s;
         }
 
@@ -150,7 +157,7 @@ namespace nickname_csharp_mech
             obj = to_lower(ref obj);
             int num_of_rand_symb = Rand.Next(0, NUMS.Length - 1);
             char rand_symb = NUMS[num_of_rand_symb];
-            s = rand_symb+adj + "_" + obj+rand_symb;
+            s = rand_symb + adj + "_" + obj + rand_symb;
             return s;
         }
 
